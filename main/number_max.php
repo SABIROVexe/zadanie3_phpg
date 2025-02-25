@@ -1,9 +1,9 @@
 <?php
 $numbers = [123, 32, 34, 123, 43, 432.2, 2432, 543, 12, 10];
 
-$count;
+$count = 0;
 
-foreach ($numbers as $element) {
+for ($i = 0; $i < count($numbers); $i++) {
     $count++; 
 }
 
