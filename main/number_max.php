@@ -1,12 +1,10 @@
 <?php
 $numbers = [123, 32, 34, 123, 43, 432.2, 2432, 543, 12, 10];
 
-$count = count($numbers);
 
-$n = $count;
 
-for ($i = 0; $i < $n - 1; $i++) {
-    for ($j = 0; $j < $n - $i - 1; $j++) {
+for ($i = 0; $i < count($numbers) - 1; $i++) {
+    for ($j = 0; $j < count($numbers) - $i - 1; $j++) {
         if ($numbers[$j] < $numbers[$j + 1]) {
             $temp = $numbers[$j];
             $numbers[$j] = $numbers[$j + 1];
